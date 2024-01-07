@@ -1,22 +1,43 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# Desafio DIO - Trilha .NET - Programação Orientada a Objetos
+[www.dio.me](www.dio.me)
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+## Desafio de Projeto
+Este projeto é parte de um desafio proposto pela Digital Innovation One (DIO) como parte da trilha .NET, com foco em Programação Orientada a Objetos.
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+## Objetivo do Desafio
+O principal objetivo deste desafio é aplicar os conceitos de Programação Orientada a Objetos (POO) na modelagem de um sistema que envolve celulares. O desafio requer a criação de uma abstração para representar celulares, permitindo a definição de comportamentos específicos para diferentes marcas e modelos.
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+## Estrutura do Projeto
+O projeto é implementado em .NET, utilizando o tipo de aplicação console. A estrutura inclui:
 
 ![Diagrama classes](Imagens/diagrama.png)
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+**Classe Abstrata Smartphone:**
+- Representa a abstração de um smartphone.
+- Propriedades para Numero, Modelo, IMEI e Memoria.
+- Método `InstalarAplicativo` é abstrato.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+**Classes Concretas Nokia e Iphone:**
+- Herdam da classe abstrata Smartphone.
+- Implementam o método `InstalarAplicativo` refletindo o comportamento específico de instalação de aplicativos para Nokia e iPhone.
+
+**Testes no Console:**
+- Cria instâncias de Nokia e Iphone.
+- Chama métodos para demonstrar o comportamento específico de cada classe.
+
+## Como Executar
+O código pode ser executado em um ambiente .NET, utilizando um ambiente de desenvolvimento integrado (IDE) como Visual Studio ou através do terminal. Certifique-se de ter o ambiente .NET instalado em sua máquina.
+
+
+
+```bash
+dotnet run
+```
+
+## Conclusão
+Este projeto é uma demonstração prática da implementação de conceitos fundamentais de Programação Orientada a Objetos em .NET. A estrutura de classes e a herança foram utilizadas para modelar o comportamento de smartphones de diferentes marcas. A conclusão bem-sucedida deste desafio não apenas reforça o entendimento de POO, mas também destaca a capacidade de aplicar esses conceitos em um contexto real de desenvolvimento.
+
+Projeto desenvolvido como parte da trilha .NET da Digital Innovation One (DIO).
+
+
+
